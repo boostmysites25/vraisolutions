@@ -33,7 +33,7 @@ AOS.init({
   once: true,
   duration: 500,
   easing: "ease-in-out-quart",
-  offset: -150,
+  offset: -500,
 });
 
 function App() {
@@ -129,7 +129,7 @@ function App() {
                 </>
               }
             />
-            <Route
+            {/* <Route
               path="/app-development"
               element={
                 <>
@@ -138,7 +138,7 @@ function App() {
                   <LandingFooter />
                 </>
               }
-            />
+            /> */}
           </Routes>
         </SpinnerContextProvider>
       </Suspense>

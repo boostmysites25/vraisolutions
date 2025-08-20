@@ -111,7 +111,7 @@ const Home = () => {
             </h1>
             <div
               data-aos="fade-up"
-              className="grid sm:grid-cols-2 gap-5 md:gap-14 mt-5"
+              className="grid sm:grid-cols-1 gap-5 md:gap-14 mt-5"
             >
               {bannerServices.map((item) => (
                 <div

@@ -9,7 +9,7 @@ const ServiceDetails = () => {
   const data = services.find((service) => service.title === name);
   if (!data) return <Navigate to="/" />;
   return (
-    <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-[#f8e4de] to-[#f5f5f5]">
+    <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-[#fffefd] to-[#fffefd]">
       <div className="wrapper">
         <div className="max-w-6xl mx-auto">
           <h1 className="section-heading">{data.title}</h1>
@@ -21,11 +21,11 @@ const ServiceDetails = () => {
           <div
             dangerouslySetInnerHTML={{ __html: data.html.firstSection }}
           ></div>
-          <div className="flex flex-col md:grid grid-cols-2 items-center mt-[3rem] gap-5">
-            <div className="w-full sm:w-1/2 md:w-full">
+          <div className="flex flex-col md:grid grid-cols-1 items-center mt-[3rem] gap-8">
+            <div className="w-full sm:w-1/2 rounded-xl overflow-hidden">
               <img
                 src={data.detailsPageImages.second}
-                classNames="object-contain"
+                classNames="object-cover rounded-xl"
                 alt={data.title}
               />
             </div>
@@ -33,17 +33,17 @@ const ServiceDetails = () => {
               dangerouslySetInnerHTML={{ __html: data.html.secondSection }}
             ></div>
           </div>
-          <div className="flex flex-col-reverse md:grid grid-cols-2 items-center gap-5 mt-[3rem]">
-            <div
-              dangerouslySetInnerHTML={{ __html: data.html.thirdSection }}
-            ></div>
-            <div className="w-full sm:w-1/2 md:w-full">
+          <div className="flex flex-col-reverse md:grid grid-cols-1 items-center gap-8 mt-[3rem]">
+            <div className="w-full sm:w-1/2 rounded-xl overflow-hidden">
               <img
                 src={data.detailsPageImages.third}
-                classNames="object-contain"
+                classNames="object-cover rounded-xl"
                 alt={data.title}
               />
             </div>
+            <div
+              dangerouslySetInnerHTML={{ __html: data.html.thirdSection }}
+            ></div>
           </div>
         </div>
       </div>

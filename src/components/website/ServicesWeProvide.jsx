@@ -10,7 +10,10 @@ const ServicesWeProvide = () => {
       <h2 data-aos="fade-up" className="section-heading text-center">
         Services We Provide
       </h2>
-      <div data-aos="fade-up" className="mt-10 pb-5 grid md:grid-cols-2 gap-5 justify-center">
+      <div
+        data-aos="fade-up"
+        className="mt-10 pb-5 grid md:grid-cols-2 gap-5 justify-center"
+      >
         {services.map((item, i) => (
           <Link
             key={item.title}
@@ -23,7 +26,7 @@ const ServicesWeProvide = () => {
                   <p className="text-xl font-medium">{item.title}</p>
                   <img
                     src={item.image}
-                    className="object-contain w-1/2 block sm:hidden"
+                    className="object-contain w-1/2 block sm:hidden rounded"
                     alt={item.title}
                   />
                   <p>{item.shortDesc}</p>
@@ -41,7 +44,7 @@ const ServicesWeProvide = () => {
               </div>
               <img
                 src={item.image}
-                className="object-contain sm:block hidden"
+                className="object-contain sm:block hidden rounded-xl"
                 alt={item.title}
               />
             </div>

@@ -47,8 +47,6 @@ const LandingHeader = () => {
             loading="lazy"
             src={logo}
             alt="logo"
-            width="75"
-            height="75"
             className="h-[3.5rem] lg:h-[5rem] object-contain"
           />
         </Scroll>

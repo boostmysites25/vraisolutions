@@ -177,12 +177,12 @@ export const services = [
     title: "AI Development",
     image: require("../assets/images/ai-development-process.jpg"),
     shortDesc:
-      "Creating intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.",
-    technologies: ["Python", "TensorFlow", "PyTorch", "OpenAI", "Scikit-learn"],
+      "Creating intelligent solutions with cutting-edge AI and ML technologies.",
+    technologies: ["Python", "TensorFlow", "PyTorch", "OpenAI"],
     detailsPageImages: {
       first: require("../assets/images/ai-development-process.jpg"),
-      second: require("../assets/images/ai-development-process.jpg"),
-      third: require("../assets/images/ai-development-process.jpg"),
+      second: require("../assets/images/ai-2.webp"),
+      third: require("../assets/images/ai-3.jpeg"),
     },
     html: {
              firstSection: `<h2 class="text-xl font-semibold mb-4">
