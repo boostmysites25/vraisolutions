@@ -9,6 +9,8 @@ export const companyDetails = {
     "Do No:12-54 penamaluru(MD)(PO) Vijayawada pin code:521139",
   phone: "7013892584",
   email: "abc@example.com",
+  instagram:"https://www.instagram.com/vrai.1988/",
+  linkedin:"https://www.linkedin.com/in/gudavalli-vemchand/"
 };
 
 // working process
